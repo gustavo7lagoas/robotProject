@@ -1,0 +1,5 @@
+FROM = 'Florianopolis (FLN)'
+TO = 'Belo Horizonte - Todos os aeroportos (BHZ)'
+FROM_DATE = '10/08/2016'
+TO_DATE = '14/08/2016'
+MAX_PRICE = '550'
