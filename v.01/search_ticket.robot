@@ -5,7 +5,6 @@ Library             Selenium2Library
 Library             String
 
 *** Variables ***
-${BROWSER}              firefox
 ${BASE_URL}             http://www.melhoresdestinos.com.br/
 ${MAX_PRICE}            550
 ${SELENIUM_TIMEOUT}     30

@@ -7,7 +7,6 @@ Library             String
 Resource            search_ticket_keywords.robot
 
 *** Variables ***
-${BROWSER}                      firefox
 ${BASE_URL}                     http://www.melhoresdestinos.com.br/
 ${MAX_PRICE}                    550
 ${SELENIUM_TIMEOUT}             60
