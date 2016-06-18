@@ -33,7 +33,7 @@ Fill Search Fields
     Input Text    data-ida    ${FROM_DATE}
     Input Text    data-volta    ${TO_DATE}
     Click Element    css=div.bt-submit-pesquisa input
-    Select Window    Passagens Aéreas, Hotéis e Pacotes é no Submarino Viagens
+    Select Window    Passagens aéreas nacionais e internacionais em promoção | Submarino Viagens Viagens
     Maximize Browser Window
     Wait Until Element Is Visible    css=div.results
 
@@ -44,7 +44,7 @@ Check Result Prices Against
     ...
     [Arguments]    ${max_price}
     ...
-    @{prices}=    Get Webelements    css=div.carousel-no-style div.cycle-carousel-wrap li.melhores-precos span.price
+    @{prices}=    Get Webelements    css=li.best_price
     :FOR    ${price}    IN    @{prices}
     \       ${price}=    Get Text    ${price}
     \       ${is_price_good}=    Compare Prices Against   ${price}    ${MAX_PRICE}

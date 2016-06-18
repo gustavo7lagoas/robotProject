@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from robot.libraries.BuiltIn import BuiltIn
 
 class ComparePrices:
     """
@@ -9,11 +10,11 @@ class ComparePrices:
         """
         Format and compare values return if price is lower the compared_price
         """
-        if price == '-':
+        price = price.strip().replace('R$ ', '').replace(',', '.')
+        if not price:
             return False
-        price = price.replace('R$ ', '')
-        price = int(price)
-        if price < int(compared_price):
+        price = float(price)
+        if price < float(compared_price):
             return True
         else:
             return False
