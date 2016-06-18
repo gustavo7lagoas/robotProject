@@ -7,7 +7,7 @@ Library             String
 Resource            search_ticket_keywords.robot
 
 *** Variables ***
-${BASE_URL}                     http://www.melhoresdestinos.com.br/
+${BASE_URL}                     http://www.viajanet.com.br/
 ${MAX_PRICE}                    550
 ${SELENIUM_TIMEOUT}             60
 ${REMOTE_URL}                   http://127.0.0.1:4444/wd/hub

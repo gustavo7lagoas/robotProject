@@ -1,6 +1,6 @@
 BROWSER = 'chrome'
-FROM = 'FLN'
-TO = 'BHZ'
+FROM = 'Florianopolis'
+TO = 'Belo Horizonte'
 FROM_DATE = '10/08/2016'
 TO_DATE = '14/08/2016'
 MAX_PRICE = '550'
