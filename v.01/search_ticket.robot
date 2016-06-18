@@ -13,6 +13,7 @@ ${SELENIUM_TIMEOUT}     30
 Search Tickets
     Open Browser    ${BASE_URL}    ${BROWSER}
     Set Selenium Timeout   ${SELENIUM_TIMEOUT}
+    Set Selenium Speed    .5 seconds
     Maximize Browser Window
     ${page_title}=    Get Title
     Should Contain     ${page_title}    Melhores Destinos
