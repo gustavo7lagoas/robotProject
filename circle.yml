@@ -1,4 +1,4 @@
 test:
     override:
         - mkdir -p $CIRCLE_TEST_REPORTS/robot
-        - robot v.03/ -o $CIRCLE_TEST_REPORTS/robot/junit.xml
+        - robot -o $CIRCLE_TEST_REPORTS/robot/junit.xml v.03/
