@@ -1,3 +1,6 @@
 test:
     override:
         - robot v.03/ -o ../report.xml
+general:
+  artifacts:
+    - "robot_results"
