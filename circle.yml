@@ -1,6 +1,4 @@
 test:
     override:
-        - robot v.03/ -o ../report.xml
-general:
-  artifacts:
-    - "robot_results"
+        - mkdir -p $CIRCLE_TEST_REPORTS/robot
+        - robot v.03/ -o $CIRCLE_TEST_REPORTS/robot/junit.xml
