@@ -16,12 +16,12 @@ Search Tickets
     Maximize Browser Window
     ${page_title}=    Get Title
     Should Contain     ${page_title}    Melhores Destinos
-    Select Radio Button    tipo_viagem    1
     Wait Until Element Is Visible    origemCP
     Input Text    origemCP    ${FROM}
     Input Text    destinoCP    ${TO}
     Input Text    data-ida    ${FROM_DATE}
     Input Text    data-volta    ${TO_DATE}
+    Select Radio Button    tipo_viagem    1
     Click Element    css=div.bt-submit-pesquisa input
     Select Window        Passagens aéreas nacionais e internacionais em promoção | Submarino Viagens Viagens
     Maximize Browser Window

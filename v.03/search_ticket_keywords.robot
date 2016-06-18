@@ -27,11 +27,11 @@ Fill Search Fields
     ...     ${trip_type}=
     ...
     Wait Until Element Is Visible    origemCP
-    Select Radio Button    tipo_viagem    1
     Input Text    origemCP    ${FROM}
     Input Text    destinoCP    ${TO}
     Input Text    data-ida    ${FROM_DATE}
     Input Text    data-volta    ${TO_DATE}
+    Select Radio Button    tipo_viagem    1
     Click Element    css=div.bt-submit-pesquisa input
     Select Window    Passagens aéreas nacionais e internacionais em promoção | Submarino Viagens Viagens
     Maximize Browser Window
